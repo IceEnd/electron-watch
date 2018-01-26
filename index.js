@@ -1,5 +1,5 @@
 const path = require('path')
-const { exec, spawn } = require('child_process');
+const { spawn } = require('child_process');
 const electron = require('electron');
 const chokidar = require('chokidar')
 
