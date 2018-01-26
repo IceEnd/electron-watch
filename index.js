@@ -1,5 +1,5 @@
 const path = require('path')
-const { exec } = require('child_process');
+const { exec, spawn } = require('child_process');
 const electron = require('electron');
 const chokidar = require('chokidar')
 
@@ -9,9 +9,12 @@ module.exports = (pathName, command, cwd) => {
     persistent: true,
   });
   watcher.on('change', () => {
-    electron.app.exit(0);
-    exec(command, {
+    const child = spawn('npm', ['run', command], {
       cwd,
+      detached: true,
+      stdio: 'inherit'
     });
+    child.unref();
+    electron.app.quit();
   });
 }
