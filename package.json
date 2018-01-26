@@ -1,0 +1,28 @@
+{
+  "name": "electron-watch",
+  "version": "0.0.1",
+  "description": "Monitor file change, and restart Electron app use command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IceEnd/electron-watch.git"
+  },
+  "keywords": [
+    "electron",
+    "watch",
+    "restart",
+    "auto-reload"
+  ],
+  "author": "Alchemy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IceEnd/electron-watch/issues"
+  },
+  "homepage": "https://github.com/IceEnd/electron-watch#readme",
+  "dependencies": {
+    "chokidar": "^1.5.1"
+  }
+}
