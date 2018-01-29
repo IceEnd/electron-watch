@@ -47,7 +47,7 @@ if (process.env.NODE_ENV === 'development') {
 
 # OPTIONS
 
-|field|type|note|
+|field|type|description|
 |-----|----|----|
 |path|string|Paths to files, dirs to be watched recursively, or glob patterns.|
 |command|string|`npm script` name, use this to start electron main process|
