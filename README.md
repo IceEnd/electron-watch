@@ -52,7 +52,7 @@ if (process.env.NODE_ENV === 'development') {
 |path       |string              |Paths to files, dirs to be watched recursively, or glob patterns.|
 |command    |string              |`npm script` name, use this to start electron main process       |
 |cwd        |string              |Current working directory of the child process.                  |
-|dely       |Number              |Dely (in ms) arguments of debounce, default is 3000ms            |
+|delay       |Number              |Dely (in ms) arguments of debounce, default is 3000ms            |
 # LICENSE
 
 [MIT @ Alchemy](https://github.com/IceEnd/electron-watch/blob/master/LICENSE)
