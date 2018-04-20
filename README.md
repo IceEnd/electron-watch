@@ -40,7 +40,7 @@ if (process.env.NODE_ENV === 'development') {
     __dirname,
     'dev:electron-main',             // npm scripts, means: npm run dev:electron-main
     path.join(__dirname, './'),      // cwd
-    2000,                            // debounce dely
+    2000,                            // debounce delay
   );
 }
 ```

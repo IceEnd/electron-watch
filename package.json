@@ -1,6 +1,6 @@
 {
   "name": "electron-watch",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Monitor file change, and restart Electron app use command.",
   "main": "index.js",
   "scripts": {
