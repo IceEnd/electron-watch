@@ -28,11 +28,12 @@ module.exports = (pathName, command, cwd, delay = 3000) => {
     persistent: true,
   });
   watcher.on('change', debounce(() => {
-    const child = spawn('npm', ['run', command], {
+    const cmd = /^win/.test(process.platform) ? 'npm.cmd' : 'npm';
+    const child = spawn(cmd, ['run', command], {
       cwd,
       detached: true,
       stdio: 'inherit'
-    })
+    });
     child.unref();
     electron.app.quit();
   }, delay));
